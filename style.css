@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Kanjiro;
+  src: url(fonts/Kanjiro.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  /* background-color: black; */
+}
+#back {
+  width: 100%;
+  height: 100vh;
+  /* background-color: red; */
+}
+#back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  align-items: center;
+}
+#top {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+}
+#workingarea {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1920px;
+  height: 100vh;
+}
+#nav {
+  pointer-events: all;
+  width: 100%;
+  padding: 2% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav img{
+  width: 15%;
+}
+#n-left,
+#n-right {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+#nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  color: #fff;
+}
+
+
+/* ------- hero section ------ */
+#hero {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  /* to push the matter in centre part height wise only */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+#hero-left {
+  min-width: 50%;
+}
+
+#hero-left .elem {
+  height: 9vw;
+  overflow: hidden;
+  position: relative;
+
+}
+#hero-left .elem h1:nth-child(1) {
+  top: 0;
+}
+#hero-left .elem h1 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  line-height: 0.9;
+  letter-spacing: 2%;
+  font-family: Kanjiro;
+  color: white;
+  font-size: 11vw;
+  font-weight: 100;
+}
+#hero-left button {
+  font-family: Kanjiro;
+  padding: 0.8vw 2.5vw;
+  margin-top: 2.5vw;
+  font-size: 3vw;
+  pointer-events: all;
+}
+
+#hero-right {
+  width: 20%;
+  color: white;
+  /* background-color: rebeccapurple; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#hero-right p {
+  text-align: right;
+  /* margin-bottom: 40px; */
+  font-weight: 300;
+  font-size: 0.9vw;
+}
+#hero-right #imagebox {
+  background-image: url(assets/flower.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 170px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#hero-right p:nth-child(3) {
+  margin-bottom: 100px;
+}
